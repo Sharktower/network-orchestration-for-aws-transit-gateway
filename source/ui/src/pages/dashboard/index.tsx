@@ -32,6 +32,7 @@ const Dashboard = () => {
 
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         setBreadCrumb([])
         getDashboardItems().catch((e) => {
             console.log(e)

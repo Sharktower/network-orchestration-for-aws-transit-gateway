@@ -40,6 +40,7 @@ const DashboardVersionHistory = () => {
 
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         setBreadCrumb(breadcrumbs)
         getVersionHistory(subnetId).catch(e => console.error(e))
     }, [])
